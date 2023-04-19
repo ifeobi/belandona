@@ -222,7 +222,7 @@ export default function ShowerCaps(props) {
           {/* box 4 */}
           <div className="box box4">
             <Image src={cat4} alt="" />
-            <h2>Ankara Showercaps</h2>
+            <h2>Ankara Shower Caps</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
               {" "}
