@@ -83,9 +83,9 @@ export default function Home() {
                   <span className="author">Bel & Ona</span>
                   <h1 className="title">Showercaps Plus</h1>
                   <p className="text">
-                    We are Nigeria's leading manufacturers of high quality
-                    shower caps and we supply in bulk nationwide at very
-                    affordable prices.
+                    We are Nigeria's leading manufacturers of high quality,
+                    durable hand-made shower caps, hair nets and bonnets and we
+                    supply in bulk nationwide.
                   </p>
                 </div>
               </div>

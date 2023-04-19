@@ -82,7 +82,7 @@ export default function ShowerCaps(props) {
       </Head>
 
       <header>
-      <Link href="/" className="logo">
+        <Link href="/" className="logo">
           <i className="bx bxs-basket"></i>Bel & Ona
         </Link>
 
@@ -191,7 +191,9 @@ export default function ShowerCaps(props) {
         <div className="categories-container">
           {/* box 1 */}
           <div className="box box1">
-            <Image src={cat1} alt="" />
+            <div className="image">
+              <Image className="mainImg" src={cat1} alt="" />             
+            </div>
             <h2>Patterned Bonnet</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -436,9 +438,9 @@ export default function ShowerCaps(props) {
               <i className="bx bxs-star-half"></i>
             </div>
             <p>
-              As a supplier, I'm impressed with their commitment
-              to international standards. Store owners always request more of
-              the products due to its high demand.
+              As a supplier, I'm impressed with their commitment to
+              international standards. Store owners always request more of the
+              products due to its high demand.
             </p>
             <div className="review-profile">
               <Image src={profile3} alt="" />
