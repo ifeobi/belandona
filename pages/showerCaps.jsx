@@ -4,24 +4,16 @@ import profile from "../images/showercaps/sleep.png";
 import swipe1 from "../images/showercaps/sleep.png";
 import swipe2 from "../images/showercaps/satin.png";
 import swipe3 from "../images/showercaps/satin2.png";
-import cat1 from "../images/showercaps/cat.png";
-import cat2 from "../images/showercaps/cat2.png";
-import cat4 from "../images/showercaps/cat3.png";
-import cat5 from "../images/showercaps/cat5.png";
-import prod1 from "../images/showercaps/prod1.png";
-import prod2 from "../images/showercaps/prod2.png";
 import prod3 from "../images/showercaps/prod3.png";
-import prod5 from "../images/showercaps/prod5.png";
-import prod6 from "../images/showercaps/prod6.png";
-import prod7 from "../images/showercaps/prod7.png";
+
 import profile2 from "../images/dp3.jpg";
 import profile3 from "../images/hp.jpg";
 import profile4 from "../images/cust2.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Hover from "../components/Hover";
 
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -191,9 +183,7 @@ export default function ShowerCaps(props) {
         <div className="categories-container">
           {/* box 1 */}
           <div className="box box1">
-            <div className="image">
-              <Image className="mainImg" src={cat1} alt="" />             
-            </div>
+            <Hover src="/image/shower/cat/cat" alt="" />
             <h2>Patterned Bonnet</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -203,7 +193,7 @@ export default function ShowerCaps(props) {
           </div>
           {/* box 2 */}
           <div className="box box2">
-            <Image src={cat2} alt="" />
+            <Hover src="/image/shower/cat/cat2" alt="" />
             <h2>Plain Bonnet</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -213,7 +203,7 @@ export default function ShowerCaps(props) {
           </div>
           {/* box 3 */}
           <div className="box box3">
-            <Image src={profile} alt="" />
+            <Hover src="/image/shower/cat/sleep" alt="" />
             <h2>Hair Net</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -223,7 +213,7 @@ export default function ShowerCaps(props) {
           </div>
           {/* box 4 */}
           <div className="box box4">
-            <Image src={cat4} alt="" />
+            <Hover src="/image/shower/cat/cat3" alt="" />
             <h2>Ankara Shower Caps</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -233,7 +223,7 @@ export default function ShowerCaps(props) {
           </div>
           {/* box 5 */}
           <div className="box box5">
-            <Image src={cat5} alt="" />
+            <Hover src="/image/shower/cat/cat5" alt="" />
             <h2>Satin Bonnet</h2>
             <span>1000+ Items</span>
             <a href="https://wa.me/+2347060529854">
@@ -259,12 +249,9 @@ export default function ShowerCaps(props) {
         <div className="products-container">
           {/* box 1 */}
           <div className="box">
-            <Image src={prod1} />
+            <Hover src="/image/shower/prod/prod" alt="" />
             <span>Hair Net</span>
             <h2>Sleep Cap Hair Net</h2>
-            {/* <h3 className="price">
-              N300 <span>/kg</span>
-            </h3> */}
             <a href="https://wa.me/+2347060529854">
               {" "}
               <i className="bx bxl-whatsapp"></i>
@@ -275,7 +262,7 @@ export default function ShowerCaps(props) {
 
           {/* box 2 */}
           <div className="box">
-            <Image src={prod2} />
+            <Hover src="/image/shower/prod/prod2" alt="" />
             <span>Bonnet</span>
             <h2>
               Satin Bonnet Ankara <br /> Trim
@@ -293,10 +280,10 @@ export default function ShowerCaps(props) {
 
           {/* box 3 */}
           <div className="box">
-            <Image src={prod6} />
+            <Hover src="/image/shower/prod/prod3" alt="" />
             <span>Bonnet</span>
             <h2>
-              Reversible Plain Satin <br /> Bonnet
+              Reversible Plain <br /> Satin Bonnet
             </h2>
             {/* <h3 className="price">
               N300 <span>/kg</span>
@@ -311,7 +298,7 @@ export default function ShowerCaps(props) {
 
           {/* box 4 */}
           <div className="box">
-            <Image src={profile} />
+            <Hover src="/image/shower/cat/sleep" alt="" />
             <span>Hair Net</span>
             <h2>Sleep Cap Hair Net</h2>
             {/* <h3 className="price">
@@ -327,7 +314,7 @@ export default function ShowerCaps(props) {
 
           {/* box 5 */}
           <div className="box">
-            <Image src={prod5} />
+            <Hover src="/image/shower/prod/prod5" alt="" />
             <span>Bonnet</span>
             <h2>Classic Satin Bonnet</h2>
             {/* <h3 className="price">
@@ -343,7 +330,7 @@ export default function ShowerCaps(props) {
 
           {/* box 6 */}
           <div className="box">
-            <Image src={prod7} />
+            <Hover src="/image/shower/prod/prod6" alt="" />
             <span>Bonnet</span>
             <h2>Classic Satin Bonnet</h2>
             {/* <h3 className="price">
@@ -461,7 +448,11 @@ export default function ShowerCaps(props) {
           </p>
           <a href="tel:+2347060529854">Tel: 07060529854</a>
           <div className="social">
-            <a href="#">
+            <a
+              href="https://facebook.com/belplusona"
+              target="_blank"
+              rel="noopener"
+            >
               <i className="bx bxl-facebook"></i>
             </a>
             <a href="#">

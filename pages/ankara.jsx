@@ -4,26 +4,22 @@ import swipe2 from "../images/ankara/swipe3.png";
 import swipe1 from "../images/ankara/swiper2.png";
 import swipe3 from "../images/ankara/swiper3.png";
 import prod1 from "../images/ankara/prod1.png";
-import prod2 from "../images/ankara/prod4.png";
-import prod3 from "../images/ankara/prod3.png";
-import prod4 from "../images/ankara/prod5.png";
-import prod6 from "../images/ankara/prod2.png";
 import profile2 from "../images/cust.jpg";
 import profile3 from "../images/dp.jpg";
 import profile4 from "../images/dp2.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect } from "react";
+import Link from "next/link";
+import Hover from "../components/Hover";
 
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper";
-import { useEffect } from "react";
-import Link from "next/link";
 
 export default function Ankara(props) {
   useEffect(() => {
@@ -196,7 +192,7 @@ export default function Ankara(props) {
 
           {/* box 2 */}
           <div className="box">
-            <Image src={prod2} />
+            <Hover src="/image/ankara/prod2" alt="African Print Short Gown" />
             <span>Bonnet</span>
             <h2>
               African Print Short <br /> Gown
@@ -213,7 +209,7 @@ export default function Ankara(props) {
 
           {/* box 3 */}
           <div className="box">
-            <Image src={prod3} />
+            <Hover src="/image/ankara/prod3" alt="Ankara Long Flowing Gown" />
             <span>Bonnet</span>
             <h2>
               Ankara Long Flowing <br /> Gown
@@ -230,7 +226,7 @@ export default function Ankara(props) {
 
           {/* box 4 */}
           <div className="box">
-            <Image src={prod4} />
+            <Hover src="/image/ankara/prod4" alt="Chiffon Boubou Long Gown" />
             <span>Hair Net</span>
             <h2>
               Chiffon Boubou Long <br />
@@ -263,7 +259,10 @@ export default function Ankara(props) {
 
           {/* box 6 */}
           <div className="box">
-            <Image src={prod6} />
+            <Hover
+              src="/image/ankara/prod6"
+              alt="African Print Short Gown"
+            />
             <span>Bonnet</span>
             <h2>
               African Print Short <br /> Gown
@@ -376,7 +375,11 @@ export default function Ankara(props) {
           </p>
           <a href="tel:+2347060529854">Tel: 07060529854</a>
           <div className="social">
-            <a href="#">
+            <a
+              href="https://facebook.com/belplusona"
+              target="_blank"
+              rel="noopener"
+            >
               <i className="bx bxl-facebook"></i>
             </a>
             <a href="#">
